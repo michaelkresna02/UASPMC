@@ -27,7 +27,7 @@ void input(){
             break;
 
             case 5:
-            searching(1);
+            searching();
             break;
 
             case 6:
