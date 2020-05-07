@@ -89,29 +89,30 @@ void load(char* filename)
 }
 
 void display(){
+    printf("No.\tNIK\t\tNama\t\tTmptLhr\tTglLhr\t\tUmur\tJns Klm\tGolDar\tStatus\tPekerjaan\n");
     for(int i=1;i<count;i++){
-        printf("%d,",data[i].No);
-        printf("%s,",data[i].NIK);
-        printf("%s,",data[i].name);
-        printf("%s,",data[i].tempat);
-        printf("%s,",data[i].tanggal);
-        printf("%d,",data[i].umur);
-        printf("%s,",data[i].kelamin);
-        printf("%s,",data[i].gol);
-        printf("%s,",data[i].status);
+        printf("%d\t",data[i].No);
+        printf("%s\t",data[i].NIK);
+        printf("%s\t",data[i].name);
+        printf("%s\t",data[i].tempat);
+        printf("%s\t",data[i].tanggal);
+        printf("%d\t",data[i].umur);
+        printf("%s\t",data[i].kelamin);
+        printf("%s\t",data[i].gol);
+        printf("%s\t",data[i].status);
         printf("%s\n",data[i].pekerjaan);
     }
 }
 
 void displaySearch(int i){
-    printf("%d,",data[i].No);
-    printf("%s,",data[i].NIK);
-    printf("%s,",data[i].name);
-    printf("%s,",data[i].tempat);
-    printf("%s,",data[i].tanggal);
-    printf("%d,",data[i].umur);
-    printf("%s,",data[i].kelamin);
-    printf("%s,",data[i].gol);
-    printf("%s,",data[i].status);
+    printf("%d\t",data[i].No);
+    printf("%s\t",data[i].NIK);
+    printf("%s\t",data[i].name);
+    printf("%s\t",data[i].tempat);
+    printf("%s\t",data[i].tanggal);
+    printf("%d\t",data[i].umur);
+    printf("%s\t",data[i].kelamin);
+    printf("%s\t",data[i].gol);
+    printf("%s\t",data[i].status);
     printf("%s\n",data[i].pekerjaan);
 }
