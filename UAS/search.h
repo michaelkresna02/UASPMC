@@ -3,18 +3,24 @@
 
 void searching(){
     char r[100];
-    int n;
+    int n,x;
     printf("\n1.NIK\n2.Nama\n3.Tempat Kelahiran\n4.Tanggal Kelahiran\n5.Tanggal Kelahiran\n6.Umur\n7.Jenis Kelamin\n8.Golongan Darah\n9.Status Perkawinan\n10.Pekerjaan\n");
     printf("Masukkan Kategori Yang Ingin Anda Cari:");scanf("%d",&n);
     printf("\n");
-    printf("Masukkan Pencarian Anda:");
-    scanf(" %[^\n]s",&r);
-    
+    if (n==1 || n==6){
+        printf("Masukkan Pencarian Anda:");
+        scanf("%d",&x);
+    }
+    else{
+        printf("Masukkan Pencarian Anda:");
+        scanf(" %[^\n]s",&r);
+    }
+
     int found=0;
     int i=1;
     printf("No.\tNIK\t\tNama\t\tTmptLhr\tTglLhr\t\tUmur\tJns Klm\tGolDar\tStatus\tPekerjaan\n");
         if(n==1){
-        while(i<count && strcmp(atoi(r),data[i].NIK)!=0){
+        while(i<count && x!=data[i].NIK){
         i++;
             }
         }
@@ -37,7 +43,7 @@ void searching(){
             }
         }
         else if(n==5){
-            while(i<count && strcmp(atoi(r),data[i].umur)!=0){
+            while(i<count && x!=data[i].umur){
             i++;
             found==1;
             }
